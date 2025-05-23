@@ -1,2 +1,2 @@
 # Obstacle-Avoiding-Car
-This is a modified version of an obstacle avoiding car using a custom ESP32 board, an ultrasonic sensor and a servo motor.
+This is a modified version of an obstacle avoiding car using a custom ESP32 board, an ultrasonic sensor and a servo motor. It has two motors and two lithium-ion batteries (3.7v). On startup, it moves front. If an obstacle is detected (using the ultrasonic sensor), it moves its neck using the servo motor (The neck has the ultrasonic sensor attached on the head) to the left, and it calculates the distance of the closest object. It then turns right and does the same. Whichever side has greater free path to move in, it turns to that direction and starts moving. This continues in a loop. 
